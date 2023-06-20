@@ -1,8 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
 }
 
 li {
-    list-style-type: none;
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+nav h1 {
+    width: 150px;
+}
+
+.overview {
+    display: flex;
+    padding-top: 200px;
+    justify-content: center;
+}
+
+.overview .name {
+    width: 30%;
+    border-style: double;
+    border-width: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.overview .name .btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.overview .name button {
+    margin-left: 50px;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
