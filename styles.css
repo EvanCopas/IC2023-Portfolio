@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #00FFEF;
+    background-color: #B2FFFF;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #B2FFFF;
+    background-color: #00FFEF;
     padding: 25px;
 }
 
@@ -36,6 +36,10 @@ nav h1 {
     display: flex;
     padding-top: 200px;
     justify-content: center;
+}
+
+.overview .image {
+    margin-right: 50px;
 }
 
 .overview .name {
