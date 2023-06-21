@@ -9,6 +9,12 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+.hero {
+    width: 400px;
+    height: auto;
 }
 
 nav {
@@ -16,6 +22,7 @@ nav {
     justify-content: space-between;
     background-color: #1034A6;
     padding: 25px;
+    color: white;
 }
 
 ul {
@@ -36,6 +43,7 @@ nav h1 {
     display: flex;
     padding-top: 200px;
     justify-content: center;
+    color: white;
 }
 
 .overview .image {
@@ -44,13 +52,14 @@ nav h1 {
 
 .overview .name {
     width: 30%;
-    border-style: double;
+    border-style: dashed;
     border-width: 5px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 40px;
+    border-color: black;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
     padding: 15px;
     text-align: center;
 }
@@ -65,7 +74,7 @@ nav h1 {
     margin-left: 50px;
     font-size: 24px;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 40px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
