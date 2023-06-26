@@ -1,31 +1,35 @@
-let homePage = document.querySelector("#home");
-let aboutmePage = document.querySelector("#aboutme");
-let projectsPage = document.querySelector("#projects");
-let contactPage = document.querySelector("#contact");
+let navHome = document.querySelector("#home");
+let navAboutMe = document.querySelector("#aboutme");
+let navProjects = document.querySelector("#projects");
+let navContact = document.querySelector("#contact");
 
-homePage.onclick = function () {
-    console.log("test");
+let homePage = document.querySelector("#homePage");
+let aboutmePage = document.querySelector("#aboutmePage");
+let projectsPage = document.querySelector("#projectsPage");
+let contactPage = document.querySelector("#contactPage");
+
+navHome.onclick = function () {
     homePage.style.display = "";
     aboutmePage.style.display = "none";
     projectsPage.style.display = "none";
     contactPage.style.display = "none";
 }
 
-aboutmePage.onclick = function () {
+navAboutMe.onclick = function () {
     homePage.style.display = "none";
-    aboutmePage.style.display = "block";
+    aboutmePage.style.display = "";
     projectsPage.style.display = "none";
     contactPage.style.display = "none";
 }
 
-projectsPage.onclick = function () {
+navProjects.onclick = function () {
     homePage.style.display = "none";
     aboutmePage.style.display = "none";
     projectsPage.style.display = "block";
     contactPage.style.display = "none";
 }
 
-contactPage.onclick = function () {
+navContact.onclick = function () {
     homePage.style.display = "none";
     aboutmePage.style.display = "none";
     projectsPage.style.display = "none";
