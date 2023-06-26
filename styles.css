@@ -39,6 +39,7 @@ ul {
 
 li:hover {
     color: aquamarine;
+    cursor: pointer;
     font-size: 30px;
     transition: 0.6s;
     -webkit-transition: 0.6s;
@@ -96,6 +97,7 @@ nav h1 {
     margin-left: 50px;
     font-size: 24px;
     padding: 5px;
+    color: blue;
     border-radius: 40px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
