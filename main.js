@@ -35,18 +35,3 @@ navContact.onclick = function () {
     projectsPage.style.display = "none";
     contactPage.style.display = "block";
 }
-
-textarea = document.querySelector("#autoresizing");
-textarea.addEventListener("input", autoResize, false);
-changeMessage = document.querySelector("#messagedChanged");
-
-function autoResize() {
-    this.style.height = "auto";
-    this.style.height = this.scrollHeight + "px";
-}
-
-function readText() {
-    inputMessage = textarea.value
-    console.log(inputMessage)
-    changeMessage = inputMessage
-}
