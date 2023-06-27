@@ -21,31 +21,52 @@
     </nav>
     <section class="overview" id="homePage">
         <div class="image">
-            <img src="./ECHero.jpg" alt="Evan Copas" class="hero"/>
+            <img src="./ECHero.jpg" alt="Evan Copas" class="hero" />
         </div>
         <div class="name">
             <h1>Evan Copas</h1>
             <p>I am 17 years old, I have a dream of going into Cyber Security, and doing Game Development. I love making
                 games, and websites on the side of going to school, and playing video games.</p>
-                <section class="btns">
-                    <button>About Me</button>
-                    <button>Projects</button>
-                </section>
-            </div>
-        </section>
+            <section class="btns">
+                <button>About Me</button>
+                <button>Projects</button>
+            </section>
+        </div>
+    </section>
 
-        <section id="aboutmePage">
+    <section id="aboutmePage">
+        <p>about page</p>
+    </section>
 
-        </section>
+    <section id="projectsPage">
+        <p>projects page</p>
+    </section>
 
-        <section id="projectsPage">
+    <fo id="contactPage">
+        <form action="https://formsubmit.co/evancopas@gmail.com" method="POST" />
 
-        </section>
+        <p>Name:</p>
+        <input type="text" name="name" required>
 
-        <section id="contactPage">
+        <p>Email:</p>
+        <input type="email" name="email" required>
+
+        <p>Phone Number: (Ex: 3170993213)</p>
+        <!--maxlength="10"-->
+        <input type="tel" name="phone" required>
+
+        <p>Message:</p>
+        <textarea id="autoresizing" onchange="readText()"></textarea>
+        <input type="text" name="message" id="messageChanged">
+
+        <input type="hidden" name="_subject" value="New contact available!">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Send Email</button>
+        </form>
 
         </section>
         <script src="main.js"></script>
-    </body>
+</body>
 
 </html>
