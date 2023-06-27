@@ -29,6 +29,7 @@ nav {
     justify-content: space-between;
     background-color: #1034A6;
     padding: 25px;
+    padding-bottom: 10px;
     color: white;
 }
 
@@ -129,6 +130,8 @@ form input {
 }
 
 #autoresizing {
-    width: 500px;
-    text-align: center;
+    width: 250px;
+    height: 100px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
