@@ -17,7 +17,7 @@ navHome.onclick = function () {
 
 navAboutMe.onclick = function () {
     homePage.style.display = "none";
-    aboutmePage.style.display = "";
+    aboutmePage.style.display = "block";
     projectsPage.style.display = "none";
     contactPage.style.display = "none";
 }
@@ -34,4 +34,19 @@ navContact.onclick = function () {
     aboutmePage.style.display = "none";
     projectsPage.style.display = "none";
     contactPage.style.display = "block";
+}
+
+textarea = document.querySelector("#autoresizing");
+textarea.addEventListener("input", autoResize, false);
+changeMessage = document.querySelector("#messagedChanged");
+
+function autoResize() {
+    this.style.height = "auto";
+    this.style.height = this.scrollHeight + "px";
+}
+
+function readText() {
+    inputMessage = textarea.value
+    console.log(inputMessage)
+    changeMessage = inputMessage
 }
