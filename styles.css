@@ -116,3 +116,19 @@ nav h1 {
 #contactPage {
     display: none;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+form input {
+    margin: 10px
+}
+
+#autoresizing {
+    width: 500px;
+    text-align: center;
+}
