@@ -17,7 +17,7 @@ navHome.onclick = function () {
 
 navAboutMe.onclick = function () {
     homePage.style.display = "none";
-    aboutmePage.style.display = "block";
+    aboutmePage.style.display = "flex";
     projectsPage.style.display = "none";
     contactPage.style.display = "none";
 }
