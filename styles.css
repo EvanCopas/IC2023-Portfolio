@@ -5,6 +5,8 @@
 
 body {
     background-color: #6495ED;
+    margin: 0;
+    display: flex;
 }
 
 a {
@@ -25,46 +27,9 @@ a {
     -o-border-radius: 500px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #1034A6;
-    padding: 25px;
-    padding-bottom: 10px;
-    color: white;
-    font-size: 24px;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    margin-bottom: 10px;
-}
-
-li:hover {
-    color: aquamarine;
-    cursor: pointer;
-    font-size: 36px;
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-}
-
-li {
-    padding-left: 25px;
-    font-size: 24px;
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-}
-
 nav h1 {
     width: 150px;
-    margin-top: -10px;
+    margin: 10px;
 }
 
 .overview {
@@ -72,6 +37,7 @@ nav h1 {
     padding-top: 200px;
     justify-content: center;
     color: white;
+    max-height: 150px;
 }
 
 .overview .image {
@@ -90,28 +56,16 @@ nav h1 {
     -o-border-radius: 50px;
     padding: 15px;
     text-align: center;
-}
-
-.overview .name .btns {
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
-}
-
-.overview .name button {
-    margin-left: 50px;
-    font-size: 24px;
-    padding: 5px;
-    color: blue;
-    border-radius: 40px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    margin-bottom: auto;
 }
 
 #aboutmePage {
     display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 25vw;
 }
 
 #projectsPage {
@@ -120,6 +74,8 @@ nav h1 {
 
 #contactPage {
     display: none;
+    margin-left: 25vw;
+    margin-top: 20vh;
 }
 
 form {
@@ -159,4 +115,106 @@ button {
     margin-top: 20px;
     padding: 7px;
     font-size: 18px;
+}
+
+.about {
+    border-style: solid;
+    border-color: #1034A6;
+    border-radius: 50px;
+    border-width: 5px;
+    width: 500px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-top: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+.about h1 {
+    margin-bottom: 25px;
+}
+
+#line {
+    border-width: 2px;
+    border-style: solid;
+    border-color: aquamarine;
+    width: 536.5px;
+    padding: 0;
+    margin: 0;
+    margin-left: -20px;
+}
+
+#aboutList {
+    padding-top: 25px;
+    list-style-type: circle;
+    width: fit-content;
+    padding-left: 200px;
+    text-align: justify;
+}
+/* Animations from https://codepen.io/comehope/pen/yxbEzJ */
+.navItemDiv {
+    padding-left: 25px;
+    padding-top: 200px;
+}
+
+.navItem {
+    font-size: 25px;
+    width: 4em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.5s;
+    margin: 0.8em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navItem::before,
+.navItem::after {
+    content: '';
+    position: absolute;
+    width: 0.6em;
+    height: 0.6em;
+    background-color: gainsboro;
+    border-radius: 50%;
+    transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
+    top: calc(50% - 0.6em / 2);
+}
+
+.navItem::before {left: 0; z-index: -1;}
+.navItem::after {right: 0; z-index: -2;}
+
+.navItem:hover {
+    color: white;
+}
+
+.navItem:hover::before,
+.navItem:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 50;
+    background-color: blue;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+}
+
+.navItem:hover::before {
+    top: 0;
+}
+
+.navItem:hover::after {
+    top: 10px;
+    right: -0.4em;
+    filter: brightness(0.8);
+}
+
+ol {
+    margin-left: -35px;
 }
