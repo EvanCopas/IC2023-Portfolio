@@ -4,9 +4,14 @@
 }
 
 body {
-    background-color: #6495ED;
     margin: 0;
     display: flex;
+    background: rgb(124, 116, 255);
+    background: -moz-linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 25%, rgba(100, 70, 255, 1) 51%, rgba(29, 215, 252, 1) 100%);
+    background: -webkit-linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 25%, rgba(100, 70, 255, 1) 51%, rgba(29, 215, 252, 1) 100%);
+    background: linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 25%, rgba(100, 70, 255, 1) 51%, rgba(29, 215, 252, 1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 a {
@@ -153,6 +158,7 @@ button {
     padding-left: 200px;
     text-align: justify;
 }
+
 /* Animations from https://codepen.io/comehope/pen/yxbEzJ */
 .navItemDiv {
     padding-left: 25px;
@@ -186,8 +192,15 @@ button {
     top: calc(50% - 0.6em / 2);
 }
 
-.navItem::before {left: 0; z-index: -1;}
-.navItem::after {right: 0; z-index: -2;}
+.navItem::before {
+    left: 0;
+    z-index: -1;
+}
+
+.navItem::after {
+    right: 0;
+    z-index: -2;
+}
 
 .navItem:hover {
     color: white;
