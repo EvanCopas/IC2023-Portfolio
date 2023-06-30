@@ -11,11 +11,12 @@
 
 <body>
     <nav>
-        <!-- <h1>EC</h1> -->
+        <h1>Evan Copas</h1>
         <div class="navItemDiv">
             <p class="navItem" id="home"><img src="aa/home.svg">Home</p>
             <p class="navItem" id="aboutme"><img src="aa/users.svg">About</p>
             <p class="navItem" id="projects"><img src="aa/folder-plus.svg">Projects</p>
+            <p class="navItem" id="education"><img src="aa/bookmark.svg">Education</p>
             <p class="navItem" id="contact"><img src="aa/external-link.svg">Contact</p>
         </div>
     </nav>
@@ -46,6 +47,12 @@
     </section>
 
     <section id="projectsPage">
+        <div class="projects">
+            
+        </div>
+    </section>
+
+    <section id="educationPage">
 
     </section>
 
@@ -58,15 +65,11 @@
             <label>Email:</label>
             <input type="email" name="email" required>
 
-            <label>Phone Number: (Ex: 123-456-
-                7890)</label>
-            <input type="tel" name="phone" required>
-
             <label>Message:</label>
             <textarea name="message" id="autoresizing"></textarea>
 
             <input type="hidden" name="_subject" value="New contact available!">
-            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_captcha" value="false">
             <!--<input type="hidden" name="_blacklist" value="">-->
 
             <button type="submit">Send Email</button>
