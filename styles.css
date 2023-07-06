@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Indie+Flower&display=swap');
 
 /* Main Content */
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Indie Flower', cursive;
 }
 
 body {
@@ -13,7 +14,12 @@ body {
     background: -webkit-linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 48%, rgba(100, 70, 255, 1) 66%, rgba(29, 215, 252, 1) 100%);
     background: linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 48%, rgba(100, 70, 255, 1) 66%, rgba(29, 215, 252, 1) 100%);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
+}
+
+p {
+    font-size: 22px;
 }
 
 /*  */
@@ -64,7 +70,6 @@ a {
     margin: 1em;
     padding-top: 5px;
     cursor: pointer;
-    font-family: 'Lobster Two', cursive;
 }
 
 .navItem::before,
@@ -146,15 +151,16 @@ a {
     margin: auto;
     padding: auto;
     max-width: 475px;
+    font-size: 18px;
 }
 
 .nameType {
     white-space: nowrap;
-    font-size: 36px;
-    font-family: 'Lobster Two', cursive;
+    font-size: 42px;
     letter-spacing: .1em;
     height: 45px;
-    color: white;
+    color: cornflowerblue;
+    text-shadow: black 5px 0 0.15em;
 }
 
 /* */
@@ -179,10 +185,9 @@ a {
     -ms-border-radius: 75px;
     -o-border-radius: 75px;
     margin-top: 1vh;
+    margin-left: -5vw;
     padding: 20px;
     text-align: center;
-    color: white;
-    font-size: 18px;
 }
 
 #line {
@@ -199,12 +204,22 @@ a {
     padding-top: 25px;
     list-style-type: circle;
     width: fit-content;
-    padding-left: 150px;
     text-align: justify;
 }
 
 ol {
     margin-left: -50px;
+    font-size: 18px;
+}
+
+li {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.about p {
+    padding: 0;
+    text-align: left;
 }
 
 /* */
@@ -234,6 +249,7 @@ ol {
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
+
 /*  */
 
 #educationPage {
@@ -283,7 +299,7 @@ textarea {
 }
 
 label {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 #subBtn {
@@ -295,8 +311,8 @@ label {
     -o-border-radius: 5px;
     border-style: solid;
     margin-top: 10px;
-    padding: 10px;
-    font-size: 18px;
+    padding: 5px;
+    font-size: 24px;
 }
 
 /*  */
