@@ -44,7 +44,7 @@ async function typeWriter2() {
             nameType.innerHTML = msg
 
             await sleep(speed*1)
-            console.log(msg)
+
             if (msg.length === 0) {
                 setTimeout(typeWriter, speed);
                 clearTimeout(typeWriter2);

@@ -47,7 +47,9 @@ a {
 .icon img {
     width: 25px;
     height: 25px;
-    margin-right: 25px;
+    margin-top: 12px;
+    margin-left: 35px;
+    float: left;
 }
 
 .navItem {
@@ -181,10 +183,6 @@ a {
     text-align: center;
     color: white;
     font-size: 18px;
-}
-
-.about h1 {
-    margin-bottom: 25px;
 }
 
 #line {
