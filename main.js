@@ -8,6 +8,53 @@ let aboutmePage = document.querySelector("#aboutmePage");
 let projectsPage = document.querySelector("#projectsPage");
 let contactPage = document.querySelector("#contactPage");
 let educationPage = document.querySelector("#educationPage");
+let nameType = document.querySelector(".nameType");
+
+let i = 0;
+let marine = 0;
+let speed = 250;
+
+nameType.onload = typeWriter();
+
+function typeWriter() {
+    let msg = "Evan Copas";
+
+    if (i < msg.length) {
+        nameType.innerHTML += msg.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    } else if (i === msg.length) {
+        setTimeout(typeWriter2, speed);
+        clearTimeout(typeWriter);
+        marine = i;
+    }
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function typeWriter2() {
+    let msg = "Evan Copas";
+
+    if (marine !== 0) {
+        nameType.innerHTML = msg
+        for (i = 0; i < msg.length;) {
+            msg = msg.substring(0, msg.length - 1);
+            nameType.innerHTML = msg
+
+            await sleep(speed*1)
+            console.log(msg)
+            if (msg.length === 0) {
+                setTimeout(typeWriter, speed);
+                clearTimeout(typeWriter2);
+                break;
+            }
+        }
+    }
+}
+
+typeWriter2();
 
 navHome.onclick = function () {
     homePage.style.display = "";

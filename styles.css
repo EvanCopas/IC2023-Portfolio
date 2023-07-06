@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+/* Main Content */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +9,6 @@
 body {
     margin: 0;
     display: flex;
-    background: rgb(124, 116, 255);
     background: -moz-linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 48%, rgba(100, 70, 255, 1) 66%, rgba(29, 215, 252, 1) 100%);
     background: -webkit-linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 48%, rgba(100, 70, 255, 1) 66%, rgba(29, 215, 252, 1) 100%);
     background: linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 48%, rgba(100, 70, 255, 1) 66%, rgba(29, 215, 252, 1) 100%);
@@ -14,55 +16,53 @@ body {
     height: 100vh;
 }
 
+/*  */
+
+/* Nav */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-.hero {
-    width: 400px;
-    height: auto;
-    border-radius: 500px;
-    border-style: outset;
-    border-width: 10px;
-    border-color: #1034A6;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-    -ms-border-radius: 500px;
-    -o-border-radius: 500px;
-}
-
-nav h1 {
-    margin-left: 50px;
-    margin-top: 50px;
-    font-size: 36px;
-}
-
 /* Animations from https://codepen.io/comehope/pen/yxbEzJ */
 .navItemDiv {
     padding-left: 25px;
-    padding-top: 100px;
+    padding-top: 175px;
 }
 
-.navItemDiv img {
+.navItemDiv .imgh {
+    width: auto;
+    height: 150px;
+    margin-top: -100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+}
+
+.icon img {
     width: 25px;
     height: 25px;
-    padding-right: 15px;
+    margin-right: 25px;
 }
 
 .navItem {
-    font-size: 22px;
+    font-size: 24px;
     width: 8em;
     height: 2em;
     text-align: center;
     line-height: 2em;
-    font-family: sans-serif;
     text-transform: capitalize;
     position: relative;
     transition: 0.5s;
-    margin: 0.8em;
-    padding: 10px;
+    margin: 1em;
+    padding-top: 5px;
     cursor: pointer;
+    font-family: 'Lobster Two', cursive;
 }
 
 .navItem::before,
@@ -71,10 +71,14 @@ nav h1 {
     position: absolute;
     width: 0.6em;
     height: 0.6em;
-    background-color: gainsboro;
+    background-color: rgb(80, 240, 248);
     border-radius: 50%;
     transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
-    top: calc(50% - 0.6em / 2);
+    top: calc(50% - 0em / 2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .navItem::before {
@@ -93,14 +97,15 @@ nav h1 {
 
 .navItem:hover::before,
 .navItem:hover::after {
+    margin-top: 7px;
     width: 100%;
     height: 100%;
-    border-radius: 50;
+    border-radius: 50%;
     background-color: aqua;
-    -webkit-border-radius: 50;
-    -moz-border-radius: 50;
-    -ms-border-radius: 50;
-    -o-border-radius: 50;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .navItem:hover::before {
@@ -108,110 +113,57 @@ nav h1 {
 }
 
 .navItem:hover::after {
-    top: 10px;
+    top: 15px;
     right: -0.4em;
     filter: brightness(0.8);
 }
 
+/*  */
+
+/* Home */
 .overview {
-    display: flex;
-    padding-top: 200px;
-    margin-top: 75px;
-    justify-content: center;
-    color: white;
-    max-height: 150px;
-}
-
-.overview .image {
-    margin-right: 50px;
-}
-
-.overview .name {
-    width: 30%;
-    border-style: outset;
-    border-width: 7px;
+    text-align: center;
+    margin-top: 250px;
+    padding: 25px;
+    color: black;
+    width: 40%;
+    height: fit-content;
+    margin-left: 17%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
     border-radius: 50px;
-    border-color: blue;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    padding: 15px;
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: auto;
 }
 
+.overview p {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    max-width: 475px;
+}
+
+.nameType {
+    white-space: nowrap;
+    font-size: 36px;
+    font-family: 'Lobster Two', cursive;
+    letter-spacing: .1em;
+    height: 45px;
+    color: white;
+}
+
+/* */
+
+/* About */
 #aboutmePage {
     display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-left: 25vw;
-}
-
-#projectsPage {
-    display: none;
-}
-
-#contactPage {
-    display: none;
-    margin-left: 25vw;
-    margin-top: 20vh;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    margin-left: -75px;
-}
-
-form input,
-textarea {
-    margin: 10px;
-    width: 250px;
-    text-align: center;
-    border-style: solid;
-    border-radius: 20px;
-    border-width: 5px;
-    border-color: black;
-    height: 30px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    background-color: skyblue;
-    color: white;
-    font-size: 18px;
-    overflow-y: hidden;
-}
-
-#autoresizing {
-    text-align: center;
-    width: 400px;
-    height: 100px;
-    word-wrap: break-word;
-    word-break: break-all;
-    resize: none;
-}
-
-label {
-    font-size: 18px;
-}
-
-button {
-    border-color: black;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-style: solid;
-    margin-top: 20px;
-    padding: 7px;
-    font-size: 18px;
 }
 
 .about {
@@ -239,7 +191,7 @@ button {
     border-width: 2px;
     border-style: solid;
     border-color: dodgerblue;
-    width: 536.5px;
+    width: 490px;
     padding: 0;
     margin: 0;
     margin-left: -20px;
@@ -249,10 +201,104 @@ button {
     padding-top: 25px;
     list-style-type: circle;
     width: fit-content;
-    padding-left: 200px;
+    padding-left: 150px;
     text-align: justify;
 }
 
 ol {
-    margin-left: -35px;
+    margin-left: -50px;
 }
+
+/* */
+
+/* Projects */
+#projectsPage {
+    display: none;
+    margin-left: 75px;
+    margin-top: 40px;
+}
+
+.projectShowcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    float: left;
+    width: 300px;
+    padding: 10px;
+    border-style: solid;
+    border-color: inherit;
+    border-width: 4px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+/*  */
+
+#educationPage {
+    display: none;
+}
+
+/* Contact */
+#contactPage {
+    display: none;
+    margin-left: 20vw;
+    margin-top: 25vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+textarea {
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: black;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: skyblue;
+    color: white;
+    font-size: 18px;
+    overflow-y: hidden;
+}
+
+#autoresizing {
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    word-wrap: break-word;
+    word-break: break-all;
+    resize: none;
+}
+
+label {
+    font-size: 18px;
+}
+
+#subBtn {
+    border-color: black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-style: solid;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/*  */

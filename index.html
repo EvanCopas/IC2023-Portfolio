@@ -7,33 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan Copas</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <body>
     <nav>
-        <h1>Evan Copas</h1>
         <div class="navItemDiv">
-            <p class="navItem" id="home"><img src="aa/home.svg">Home</p>
-            <p class="navItem" id="aboutme"><img src="aa/users.svg">About</p>
-            <p class="navItem" id="projects"><img src="aa/folder-plus.svg">Projects</p>
-            <p class="navItem" id="education"><img src="aa/bookmark.svg">Education</p>
-            <p class="navItem" id="contact"><img src="aa/external-link.svg">Contact</p>
+            <img class="imgh" src="./ECHero.jpg">
+            <p class="navItem icon" id="home"><img src="aa/home.svg">Home</p>
+            <p class="navItem icon" id="aboutme"><img src="aa/users.svg">About</p>
+            <p class="navItem icon" id="projects"><img src="aa/folder-plus.svg">Projects</p>
+            <p class="navItem icon" id="education"><img src="aa/bookmark.svg">Education</p>
+            <p class="navItem icon" id="contact"><img src="aa/external-link.svg">Contact</p>
         </div>
     </nav>
     <section class="overview" id="homePage">
-        <div class="image">
-            <img src="./ECHero.jpg" alt="Evan Copas" class="hero" />
-        </div>
-        <div class="name">
-            <h1>Evan Copas</h1>
-            <p>I am 17 years old, I have a dream of going into Cyber Security, and doing Game Development. I love making
-                games, and websites on the side of going to school, and playing video games.</p>
-        </div>
+        <h1 class="nameType"></h1>
+        <br>
+        <p>I am 17 years old, I love to make websites, and I am learning how to make games in C++</p>
     </section>
 
     <section id="aboutmePage">
         <div class="about">
-            <h1>About Evan Copas</h1>
+            <h1 class="nameType">About Evan Copas</h1>
             <div id="line"></div>
             <ul id="aboutList">
                 <ol>17 Years Old</ol>
@@ -48,7 +45,26 @@
 
     <section id="projectsPage">
         <div class="projects">
-            
+            <div class="projectShowcase">
+                <h1>Project Name</h1>
+                <p>Project Description</p>
+                <p>Show link</p>
+            </div>
+            <div class="projectShowcase">
+                <h1>Project Name</h1>
+                <p>Project Description</p>
+                <p>Show link</p>
+            </div>
+            <div class="projectShowcase">
+                <h1>Project Name</h1>
+                <p>Project Description</p>
+                <p>Show link</p>
+            </div>
+            <div class="projectShowcase">
+                <h1>Project Name</h1>
+                <p>Project Description</p>
+                <p>Show link</p>
+            </div>
         </div>
     </section>
 
@@ -72,7 +88,7 @@
             <input type="hidden" name="_captcha" value="false">
             <!--<input type="hidden" name="_blacklist" value="">-->
 
-            <button type="submit">Send Email</button>
+            <button type="submit" id="subBtn">Send Email</button>
         </form>
 
     </section>
