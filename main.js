@@ -58,6 +58,10 @@ typeWriter2();
 
 navHome.onclick = function () {
     homePage.style.display = "";
+    if (navHome.classList.contains("selected")) {
+        navHome.classList.add("active");
+        navHome.classList.remove("selected")
+    }
     aboutmePage.style.display = "none";
     projectsPage.style.display = "none";
     educationPage.style.display = "none";
