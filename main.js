@@ -22,16 +22,22 @@ function localClock() {
     setInterval(() => {
         const date = new Date();
 
-        let day = date.getDate();
-        let month = date.getMonth() + 1;
-        let year = date.getFullYear();
+        const dd = date.getDate();
+        const MM = date.getMonth();
+        const ss = date.getSeconds();
+        const mm = date.getMinutes();
+        const HH = date.getHours();
 
-        let hour = date.getHours();
-        let minute = date.getMinutes();
-        let second = date.getSeconds();
+        const year = date.getFullYear();
+        const month = ("0" + (MM + 1)).slice(-2);
+        const day = ("0" + dd).slice(-2);
 
-        let currentDate = `${month}-${day}-${year}`;
-        let time = `${hour} : ${minute} : ${second}`;
+        const hour = ("0" + HH).slice(-2);
+        const minutes = ("0" + mm).slice(-2);
+        const seconds = ("0" + ss).slice(-2);
+
+        let currentDate = `${month}-${day}-${year}`
+        let time = `${hour} : ${minutes} : ${seconds}`
 
         currentDate = currentDate + " " + time;
         timeClock.innerHTML = currentDate;
