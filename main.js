@@ -12,7 +12,7 @@ let nameType = document.querySelector(".nameType");
 
 let i = 0;
 let marine = 0;
-let speed = 250;
+let speed = 275;
 
 nameType.onload = typeWriter();
 
@@ -58,10 +58,6 @@ typeWriter2();
 
 navHome.onclick = function () {
     homePage.style.display = "";
-    if (navHome.classList.contains("selected")) {
-        navHome.classList.add("active");
-        navHome.classList.remove("selected")
-    }
     aboutmePage.style.display = "none";
     projectsPage.style.display = "none";
     educationPage.style.display = "none";
