@@ -9,12 +9,34 @@ let projectsPage = document.querySelector("#projectsPage");
 let contactPage = document.querySelector("#contactPage");
 let educationPage = document.querySelector("#educationPage");
 let nameType = document.querySelector(".nameType");
+let timeClock = document.querySelector("#timeClock");
 
 let i = 0;
 let marine = 0;
 let speed = 275;
 
 nameType.onload = typeWriter();
+timeClock.onload = localClock();
+
+function localClock() {
+    setInterval(() => {
+        const date = new Date();
+
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        let second = date.getSeconds();
+
+        let currentDate = `${month}-${day}-${year}`;
+        let time = `${hour} : ${minute} : ${second}`;
+
+        currentDate = currentDate + " " + time;
+        timeClock.innerHTML = currentDate;
+    }, 1000);
+}
 
 function typeWriter() {
     let msg = "Evan Copas";
@@ -43,7 +65,7 @@ async function typeWriter2() {
             msg = msg.substring(0, msg.length - 1);
             nameType.innerHTML = msg
 
-            await sleep(speed*1)
+            await sleep(speed * 1)
 
             if (msg.length === 0) {
                 setTimeout(typeWriter, speed);

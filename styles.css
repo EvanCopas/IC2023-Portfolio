@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Indie+Flower&family=Kalam:wght@300&display=swap&display=swap');
 
 /* Main Content */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Kalam', cursive;
     color: white;
 }
 
@@ -30,10 +30,15 @@ a {
     color: inherit;
 }
 
+#timeClock {
+    margin: 0;
+    padding: 0;
+}
+
 /* Animations from https://codepen.io/comehope/pen/yxbEzJ */
 .navItemDiv {
     padding-left: 25px;
-    padding-top: 175px;
+    padding-top: 135px;
 }
 
 .navItemDiv .imgh {
@@ -193,26 +198,26 @@ a {
     border-width: 2px;
     border-style: solid;
     border-color: white;
-    width: 740px;
+    width: 790px;
     padding: 0;
     margin: 0;
+    margin-top: 25px;
     margin-left: -20px;
 }
 
 #aboutList {
     padding-top: 25px;
     list-style-type: circle;
-    width: fit-content;
+    width: 750px;
     text-align: justify;
 }
 
 ol {
-    margin-left: -50px;
     font-size: 24px;
 }
 
 li {
-    margin-left: 15px;
+    margin-left: 50px;
     font-size: 22px;
 }
 
@@ -260,7 +265,8 @@ li {
     margin-left: 20px;
 }
 
-.internships, .schools {
+.internships,
+.schools {
     float: left;
     border-style: solid;
     padding: 10px;
@@ -269,6 +275,7 @@ li {
     border-width: 5px;
     border-color: white;
     border-radius: 25px;
+    background-color: cornflowerblue;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
