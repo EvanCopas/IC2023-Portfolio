@@ -82,8 +82,6 @@ async function typeWriter2() {
     }
 }
 
-typeWriter2();
-
 navHome.onclick = function () {
     homePage.style.display = "";
     aboutmePage.style.display = "none";
