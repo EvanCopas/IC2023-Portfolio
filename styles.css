@@ -5,14 +5,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Indie Flower', cursive;
+    color: white;
 }
 
 body {
     margin: 0;
     display: flex;
-    background: -moz-linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 48%, rgba(100, 70, 255, 1) 66%, rgba(29, 215, 252, 1) 100%);
-    background: -webkit-linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 48%, rgba(100, 70, 255, 1) 66%, rgba(29, 215, 252, 1) 100%);
-    background: linear-gradient(43deg, rgba(124, 116, 255, 1) 0%, rgba(58, 246, 244, 1) 48%, rgba(100, 70, 255, 1) 66%, rgba(29, 215, 252, 1) 100%);
+    background-image: url("./img/desktop-wallpaper-blue-starry-sky-aesthetic-blue-starry-night-sky.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -42,7 +41,7 @@ a {
     height: auto;
     margin-top: -100px;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     border-width: 5px;
     border-radius: 150px;
     -webkit-border-radius: 150px;
@@ -138,7 +137,7 @@ a {
     margin-left: 17%;
     border-style: solid;
     border-width: 5px;
-    border-color: black;
+    border-color: white;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -176,7 +175,7 @@ a {
 
 .about {
     border-style: solid;
-    border-color: #1034A6;
+    border-color: white;
     border-radius: 75px;
     border-width: 5px;
     width: 750px;
@@ -193,8 +192,8 @@ a {
 #line {
     border-width: 2px;
     border-style: solid;
-    border-color: dodgerblue;
-    width: 490px;
+    border-color: white;
+    width: 740px;
     padding: 0;
     margin: 0;
     margin-left: -20px;
@@ -240,8 +239,8 @@ li {
     float: left;
     width: 300px;
     padding: 10px;
-    border-style: outset;
-    border-color: #1034A6;
+    border-style: solid;
+    border-color: white;
     border-width: 7px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -268,6 +267,7 @@ li {
     margin-top: 100px;
     margin-left: 100px;
     border-width: 5px;
+    border-color: white;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -308,7 +308,7 @@ textarea {
     border-style: solid;
     border-radius: 20px;
     border-width: 5px;
-    border-color: black;
+    border-color: white;
     height: 40px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -334,7 +334,7 @@ label {
 }
 
 #subBtn {
-    border-color: black;
+    border-color: white;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
