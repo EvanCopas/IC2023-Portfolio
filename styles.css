@@ -341,6 +341,7 @@ label {
 }
 
 #subBtn {
+    background-color: aquamarine;
     border-color: white;
     border-radius: 5px;
     -webkit-border-radius: 5px;
